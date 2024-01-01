@@ -9,7 +9,7 @@
 import pytest
 
 #Project library
-from utility.comparison import miner
+from utility.comparison import get_min
 
 #--------------------------------------------------------------------------------------
 @pytest.mark.parametrize(
@@ -27,7 +27,7 @@ def test_min(num_1, num_2, expected):
     # Arrange
     # Act
 
-    result = min(num_1, num_2)
+    result = get_min(num_1, num_2)
 
     # Assert
     assert result == expected
